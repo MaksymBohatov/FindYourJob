@@ -1,0 +1,132 @@
+@import "../../colors";
+@import "../../mixins";
+.jobs {
+  padding: 70px 0 80px;
+  @media screen and (max-width: 1139px) {
+      padding: 50px 0;
+  }
+}
+.jobs__content {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.jobs__title {
+  @include primary-txt($fsize: 24px, $fweight: 700);
+  text-align: start;
+
+  @media screen and (max-width: 1139px) {
+    font-size: 18px;
+    text-align: center;
+  }
+}
+.jobs__jobs-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.jobs__job-offer {
+  padding: 30px 50px 30px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 10px;
+  border: 1px solid $Cards-Border;
+
+  @media screen and (max-width: 1139px) {
+    flex-direction: column;
+    gap: 30px;
+    padding: 30px;
+  }
+}
+.jobs__job-offer-main {
+  display: flex;
+  align-items: center;
+
+  @media screen and (max-width: 1139px) {
+    flex-direction: column;
+
+    gap: 30px;
+  }
+}
+.jobs__job-descr {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  margin: 0 46px 0 20px;
+
+  @media screen and (max-width: 1139px) {
+      margin: 0;
+      align-items: center;
+  }
+}
+.job__job-name {
+  @include primary-txt($fweight: 700);
+}
+.job__job-place {
+  @include primary-txt($fsize: 14px);
+  opacity: 0.8;
+}
+.job__salary {
+  @include primary-txt($Accent, $fweight: 700);
+  text-align: center;
+
+  display: inline-flex;
+  padding: 10px 25px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+
+  border-radius: 5px;
+  background: $Buttons-Primary;
+}
+.job__requirements {
+  display: flex;
+  align-items: center;
+  margin-left: 62px;
+  gap: 10px;
+
+  @media screen and (max-width: 1139px) {
+      margin: 0;
+      flex-direction: column;
+  }
+}
+.job__requirements-items {
+  display: flex;
+  gap: 10px
+}
+.job__requirements-subtitle {
+  @include primary-txt($Inputs-Grey, 14px);
+}
+.job__requirement {
+  @include primary-txt($Inputs-Grey, 14px);
+  display: flex;
+  padding: 5px 10px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+
+  border-radius: 5px;
+  border: 1px solid $Inputs-Grey;
+}
+.job__more-about {
+  @include primary-txt($Buttons-Primary);
+}
+.jobs__more-vacancies {
+  display: inline-flex;
+  padding: 15px 30px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+
+  border-radius: 5px;
+  background: $Buttons-Primary;
+}
+.job__more-vacancies-txt {
+  @include primary-txt($Accent);
+}
+.jobs__more-vacancies-wrapper {
+  display: flex;
+  justify-content: center;
+}

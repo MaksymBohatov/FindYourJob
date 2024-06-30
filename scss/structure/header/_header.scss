@@ -1,0 +1,213 @@
+@import "../../colors";
+@import "../../mixins";
+.header {
+  background-color: $Section-Bg;
+  padding: 44px 0 56px 0;
+  @media screen and (max-width: 1139px) {
+    padding: 29px 0 36.35px 0;
+  }
+}
+.header__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.icon-logo-blue {
+  width: 131.469px;
+  height: 30px;
+  @media screen and (max-width: 1139px) {
+    width: 90px;
+    height: 20.537px;
+  }
+}
+
+.navbar {
+  display: flex;
+  gap: 20px;
+}
+@media screen and (max-width: 1139px) {
+  .header__navbar {
+    display: none;
+  }
+}
+.navbar__link {
+  @include primary-txt($Text-Primary);
+
+  transition: color 0.25s ease-out;
+}
+.navbar__link:hover {
+  color: $Buttons-Primary;
+}
+.header__links-acc {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+
+  @media screen and (max-width: 1139px) {
+    display: none;
+  }
+}
+
+.header__link-login {
+  @include primary-txt($Text-Primary);
+  transition: color 0.25s ease-out;
+}
+.header__link-login:hover {
+  color: $Buttons-Primary;
+}
+.header__link-reg {
+  @include primary-txt($Accent);
+
+  display: inline-flex;
+  padding: 15px 30px;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 5px;
+  background: $Buttons-Primary;
+}
+.header__burger-menu {
+  display: none;
+
+  @media screen and (max-width: 1139px) {
+    display: block;
+  }
+}
+.header__main-content {
+  display: flex;
+  gap: 128px;
+  margin-top: 75px;
+
+  @media screen and (max-width: 1139px) {
+    flex-direction: column;
+  }
+}
+
+.header__main-content-txt {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+
+  @media screen and (max-width: 1139px) {
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+  }
+}
+
+.header__title {
+  @include primary-txt($fsize: 44px, $fweight: 900);
+  letter-spacing: 2px;
+  max-width: 460px;
+
+  @media screen and (max-width: 1139px) {
+    @include primary-txt($fsize: 24px, $fweight: 900);
+    max-width: 255px;
+  }
+}
+.header__title-descr {
+  @include primary-txt($fsize: 18px);
+  max-width: 430px;
+  margin: 15px 0 30px 0;
+  line-height: 140%; /* 25.2px */
+
+  @media screen and (max-width: 1139px) {
+    @include primary-txt;
+    max-width: 290px;
+    margin: 0 0 9px 0;
+  }
+}
+.input-field {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 11px 10px 10px 25px;
+  width: 100%;
+  max-width: 447px;
+  height: 70px;
+
+  border-radius: 5px;
+  border: 1px solid $Border-color1;
+  background: $Accent;
+  box-shadow: 0px 4px 25px 0px rgba(15, 17, 56, 0.1);
+
+  margin-bottom: 30px;
+
+  @media screen and (max-width: 1139px) {
+    max-width: 290px;
+  }
+}
+.input-field__input {
+  @include primary-txt;
+  border: none;
+  @media screen and (max-width: 1139px) {
+    max-width: 151px;
+  }
+}
+.input-field__input::placeholder {
+  @include primary-txt($Inputs-Grey);
+}
+.icon-search {
+  width: 15px;
+  height: 15px;
+  fill: #fff;
+}
+.input-field__btn {
+  display: inline-flex;
+  padding: 15px 30px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+
+  border-radius: 5px;
+  background: $Buttons-Primary;
+}
+.input-field__btn-txt {
+  @include primary-txt($Accent);
+
+  @media screen and (max-width: 1139px) {
+    display: none;
+  }
+}
+.header__job-examples {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+
+  @media screen and (max-width: 1139px) {
+      flex-direction: column;
+
+  }
+}
+.header__job-examples-list {
+  display: flex;
+  align-items: center;
+  gap: 10px;  
+}
+.header__job-example {
+  @include primary-txt($Inputs-Grey, 14px);
+  display: flex;
+  padding: 5px 10px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+
+  border-radius: 5px;
+  border: 1px solid #b2b2b2;
+
+  transition: color 0.25s ease-out, border 0.25s ease-out;
+}
+.header__job-example:hover {
+  color: $Buttons-Primary;
+  border: 1px solid $Buttons-Primary;
+}
+.header__job-example-subtitle {
+  @include primary-txt($Inputs-Grey, 14px);
+  margin-right: 5px;
+}
+.header__img {
+  @media screen and (max-width: 1139px) {
+    width: 252.448px;
+    height: 258.653px;
+  }
+}

@@ -1,0 +1,82 @@
+@import "../../colors";
+@import "../../mixins";
+.footer {
+  padding: 70px 0 72px 0;
+
+  @media screen and (max-width: 1139px) {
+    padding: 50px 0 54px 0;
+  }
+}
+.footer__content {
+  display: flex;
+  align-items: start;
+  gap: 128px;
+
+  @media screen and (max-width: 1139px) {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+}
+.footer__copyright {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+
+  @media screen and (max-width: 1139px) {
+    align-items: center;
+  }
+}
+.icon-logo {
+  width: 131.469px;
+  height: 30px;
+}
+.footer__slogan {
+  @include primary-txt($Inputs-Grey, 12px);
+  width: 166px;
+  line-height: 140%; /* 16.8px */
+
+  margin: 38px 0 25px 0;
+
+  @media screen and (max-width: 1139px) {
+    margin: 20px 0 10px 0;
+  }
+}
+.footer__date {
+  @include primary-txt($Inputs-Grey, 12px);
+  line-height: 140%; /* 16.8px */
+}
+.footer__info-wrapper {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  width: 100%;
+  // padding: 38px 33px 28px 40px;
+
+  @media screen and (max-width: 1139px) {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+}
+.footer__info {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 10px;
+
+  @media screen and (max-width: 1139px) {
+    align-items: center;
+  }
+}
+.footer__info-title {
+  @include primary-txt($fweight: 700);
+  margin-bottom: 5px;
+}
+.footer__info-link {
+  @include primary-txt;
+  transition: color 0.25s ease-out;
+}
+.footer__info-link:hover {
+  color: $Buttons-Primary;
+}

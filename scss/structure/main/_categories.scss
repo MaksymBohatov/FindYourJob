@@ -1,0 +1,66 @@
+@import "../../colors";
+@import "../../mixins";
+.categories {
+  padding: 70px 0 80px 0;
+  @media screen and (max-width: 1139px) {
+    padding: 50px 0;
+  }
+}
+.categories__content {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  @media screen and (max-width: 1139px) {
+    align-items: center;
+  }
+}
+.categories__title {
+  @include primary-txt($fsize: 24px, $fweight: 700);
+
+  @media screen and (max-width: 1139px) {
+    font-size: 18px;
+  }
+}
+.categories__items {
+  display: flex;
+  gap: 30px;
+  @media screen and (max-width: 1139px) {
+    flex-direction: column;
+  }
+}
+.categories__item {
+  padding: 35px 55px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+  width: 166px;
+
+  border-radius: 10px;
+  background: $Buttons-Grey;
+
+  cursor: pointer;
+  transition: background 0.25s ease-out;
+}
+.categories__item .icon {
+  fill: #111238;
+  width: 24px;
+  height: 24px;
+
+  transition: fill 0.25s ease-out;
+}
+.categories__item-name {
+  @include primary-txt;
+  text-align: center;
+
+  transition: color 0.25s ease-out;
+}
+.categories__item:hover {
+  background: $Buttons-Primary;
+}
+.categories__item:hover .icon {
+  fill: #fff;
+}
+.categories__item:hover span {
+  color: $Accent;
+}

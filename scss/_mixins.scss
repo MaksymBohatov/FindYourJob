@@ -1,0 +1,9 @@
+@mixin primary-txt($color: $Text-Primary, $fsize: 16px, $fweight: 400) {
+  color: $color;
+  font-family: "Fira Sans";
+  font-size: $fsize;
+  font-style: normal;
+  font-weight: $fweight;
+  line-height: normal;
+}
+

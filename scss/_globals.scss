@@ -1,0 +1,28 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+.container {
+  max-width: 1176px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+@media screen and (max-width: 1139px) {
+  .container {
+    max-width: 320px;
+  }
+}
+a {
+  text-decoration: none;
+}
+input:focus {
+  outline: none;
+}
+button {
+  cursor: pointer;
+  border: none;
+}

@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FindYourJob</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header__top">
+          <a href="#" class="header__logo-link">
+            <svg class="icon icon-logo-blue">
+              <use
+                xlink:href="FindYourJob-icomoon/symbol-defs.svg#icon-logo-blue"
+              >
+                <symbol id="icon-search" viewBox="0 0 32 32"></symbol>
+              </use>
+            </svg>
+          </a>
+          <nav class="navbar header__navbar">
+            <a class="navbar__link" href="#">Головна</a>
+            <a class="navbar__link" href="#">Вакансії</a>
+            <a class="navbar__link" href="#">Компанії</a>
+          </nav>
+          <div class="header__links-acc">
+            <a class="header__link-login" href="#">Увійти</a>
+            <a class="header__link-reg" href="#">Реєстрація</a>
+          </div>
+          <button class="header__burger-menu">
+            <img src="./images/menu-burger.svg" alt="menu" class="menu-burger">
+          </button>
+        </div>
+        <div class="header__main-content">
+          <div class="header__main-content-txt">
+            <h2 class="header__title">Знайдіть віддалену роботу вашої мрії</h2>
+            <h3 class="header__title-descr">
+              Створіть резюме або надішліть відгук на вакансію в компанії зі
+              світовим ім'ям і працюйте за вільним графіком
+            </h3>
+            <div class="input-field">
+              <form>
+                <input
+                  type="text"
+                  class="input-field__input"
+                  placeholder="Почніть пошук"
+                />
+              </form>
+              <button class="input-field__btn">
+                <svg class="icon icon-search">
+                  <use
+                    xlink:href="FindYourJob-icomoon/symbol-defs.svg#icon-search"
+                  ></use>
+                </svg>
+                <span class="input-field__btn-txt">Шукати вакансії</span>
+              </button>
+            </div>
+            <div class="header__job-examples">
+              <span class="header__job-example-subtitle">Наприклад:</span>
+              <div class="header__job-examples-list">
+                <a href="#" class="header__job-example">Front-end</a>
+                <a href="#" class="header__job-example">Back-end</a>
+                <a href="#" class="header__job-example">Designer</a>
+              </div>
+            </div>
+          </div>
+          <img src="./images/hero-image.svg" class="header__img" />
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <section class="categories">
+        <div class="container categories__content">
+          <h2 class="categories__title">Категорії</h2>
+          <div class="categories__items">
+            <div class="categories__item">
+              <svg class="icon icon-brush">
+                <use
+                  xlink:href="FindYourJob-icomoon/symbol-defs.svg#icon-brush"
+                ></use>
+              </svg>
+              <span class="categories__item-name">Дизайн</span>
+            </div>
+            <div class="categories__item">
+              <svg class="icon icon-browser">
+                <use
+                  xlink:href="FindYourJob-icomoon/symbol-defs.svg#icon-browser"
+                ></use>
+              </svg>
+              <span class="categories__item-name">Розробка</span>
+            </div>
+            <div class="categories__item">
+              <svg class="icon icon-edit">
+                <use
+                  xlink:href="FindYourJob-icomoon/symbol-defs.svg#icon-edit"
+                ></use>
+              </svg>
+              <span class="categories__item-name">Копірайтинг</span>
+            </div>
+            <div class="categories__item">
+              <svg class="icon icon-fingerprint">
+                <use
+                  xlink:href="FindYourJob-icomoon/symbol-defs.svg#icon-fingerprint"
+                ></use>
+              </svg>
+              <span class="categories__item-name">Безпека</span>
+            </div>
+            <div class="categories__item">
+              <svg class="icon icon-camera">
+                <use
+                  xlink:href="FindYourJob-icomoon/symbol-defs.svg#icon-camera"
+                ></use>
+              </svg>
+              <span class="categories__item-name">Відео</span>
+            </div>
+            <div class="categories__item">
+              <svg class="icon icon-school">
+                <use
+                  xlink:href="FindYourJob-icomoon/symbol-defs.svg#icon-school"
+                ></use>
+              </svg>
+              <span class="categories__item-name">Освіта</span>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="jobs">
+        <div class="container jobs__content">
+          <h2 class="jobs__title">Свіжі вакансії</h2>
+
+          <div class="jobs__jobs-list">
+            <div class="jobs__job-offer">
+              <div class="jobs__job-offer-main">
+                <img src="./images/logo-company.png" alt="logo" />
+                <div class="jobs__job-descr">
+                  <h3 class="job__job-name">Front-end розробник</h3>
+                  <h5 class="job__job-place">Технопарк, Київ</h5>
+                </div>
+                <span class="job__salary">85 000 ₴</span>
+                <div class="job__requirements">
+                  <span class="job__requirements-subtitle">Вимоги:</span>
+                  <div class="job__requirements-items">
+                    <span class="job__requirement">React</span>
+                    <span class="job__requirement">Sass</span>
+                    <span class="job__requirement">Figma</span>
+                  </div>
+                </div>
+              </div>
+              <a class="job__more-about" href="#">Детальніше →</a>
+            </div>
+            <div class="jobs__job-offer">
+              <div class="jobs__job-offer-main">
+                <img src="./images/logo-company.png" alt="logo" />
+                <div class="jobs__job-descr">
+                  <h3 class="job__job-name">Front-end розробник</h3>
+                  <h5 class="job__job-place">Технопарк, Львів</h5>
+                </div>
+                <span class="job__salary">80 000 ₴</span>
+                <div class="job__requirements">
+                  <span class="job__requirements-subtitle">Вимоги:</span>
+                  <span class="job__requirement">React</span>
+                  <span class="job__requirement">Sass</span>
+                  <span class="job__requirement">Figma</span>
+                </div>
+              </div>
+              <a class="job__more-about" href="#">Детальніше →</a>
+            </div>
+            <div class="jobs__job-offer">
+              <div class="jobs__job-offer-main">
+                <img src="./images/logo-company.png" alt="logo" />
+                <div class="jobs__job-descr">
+                  <h3 class="job__job-name">Front-end розробник</h3>
+                  <h5 class="job__job-place">Технопарк, Харків</h5>
+                </div>
+                <span class="job__salary">80 000 ₴</span>
+                <div class="job__requirements">
+                  <span class="job__requirements-subtitle">Вимоги:</span>
+                  <span class="job__requirement">React</span>
+                  <span class="job__requirement">Sass</span>
+                  <span class="job__requirement">Figma</span>
+                </div>
+              </div>
+              <a class="job__more-about" href="#">Детальніше →</a>
+            </div>
+            <div class="jobs__job-offer">
+              <div class="jobs__job-offer-main">
+                <img src="./images/logo-company.png" alt="logo" />
+                <div class="jobs__job-descr">
+                  <h3 class="job__job-name">Front-end розробник</h3>
+                  <h5 class="job__job-place">Технопарк, Одеса</h5>
+                </div>
+                <span class="job__salary">75 000 ₴</span>
+                <div class="job__requirements">
+                  <span class="job__requirements-subtitle">Вимоги:</span>
+                  <span class="job__requirement">React</span>
+                  <span class="job__requirement">Sass</span>
+                  <span class="job__requirement">Figma</span>
+                </div>
+              </div>
+              <a class="job__more-about" href="#">Детальніше →</a>
+            </div>
+          </div>
+
+          <div class="jobs__more-vacancies-wrapper">
+            <button class="jobs__more-vacancies">
+              <span class="job__more-vacancies-txt">Більше вакансій</span>
+            </button>
+          </div>
+        </div>
+      </section>
+      <section class="mailing">
+        <div class="container mailing__content">
+          <h2 class="mailing__title">Підпишіться на розсилку з новими вакансіями</h2>
+          <h3 class="mailing__descr">Ми надсилаємо по одному листу на тиждень з відповідними вам вакансіями</h3>
+          <div class="input-field">
+            <form>
+              <input
+                type="email"
+                class="input-field__input"
+                placeholder="E-mail"
+              />
+              
+            </form>
+            <button class="input-field__btn">
+              <svg class="icon icon-search">
+                <use
+                  xlink:href="FindYourJob-icomoon/symbol-defs.svg#icon-Vector"
+                ></use>
+              </svg>
+              <span class="input-field__btn-txt">Підписатися</span>
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container footer__content">
+        <div class="footer__copyright">
+          <svg class="icon icon-logo"><use xlink:href="FindYourJob-icomoon/symbol-defs.svg#icon-logo"></use></svg>
+          <p class="footer__slogan">Сайт із вакансіями для тих, хто шукає віддалену роботу</p>
+          <span class="footer__date">© 2021</span>
+        </div>
+        <div class="footer__info-wrapper">
+          <div class="footer__info">
+            <h2 class="footer__info-title">Зв'яжіться з нами</h2>
+            <a class="footer__info-link" href="tel:8 800 20 20 300">8 800 20 20 300</a>
+            <a class="footer__info-link" href="mailto:info@findyourjob.net">info@findyourjob.net</a>
+          </div>
+          <div class="footer__info">
+            <h2 class="footer__info-title">Інформація</h2>
+            <a class="footer__info-link" href="#">Обробка даних</a>
+            <a class="footer__info-link" href="#">Конфіденційність</a>
+            <a class="footer__info-link" href="#">Публічна оферта</a>
+          </div>
+          <div class="footer__info">
+            <h2 class="footer__info-title">Навігація по сайту</h2>
+            <a class="footer__info-link" href="#">Вакансії</a>
+            <a class="footer__info-link" href="#">Компанії</a>
+            <a class="footer__info-link" href="#">Контакти</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
